@@ -27,7 +27,8 @@
     "clean": "rm -rf dist",
     "build": "yarn clean && tsc",
     "prepublishOnly": "yarn build",
-    "test": "nyc ./node_modules/mocha/bin/_mocha --ui bdd --recursive --timeout 30000 --require ts-node/register \"test/test.ts\""
+    "test": "nyc ./node_modules/mocha/bin/_mocha --ui bdd --recursive --timeout 30000 --require ts-node/register \"test/test.ts\"",
+    "prepare": "yarn build"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.7",
