@@ -30,6 +30,9 @@
     "test": "nyc ./node_modules/mocha/bin/_mocha --ui bdd --recursive --timeout 30000 --require ts-node/register \"test/test.ts\"",
     "prepare": "yarn build"
   },
+  "files": [
+    "dist/Connection.js"
+  ],
   "devDependencies": {
     "@types/mocha": "^5.2.7",
     "@types/node": "^10.17.60",
