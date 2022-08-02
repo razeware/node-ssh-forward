@@ -123,7 +123,8 @@ class SSHConnection {
                 port: this.options.endPort,
                 username: this.options.username,
                 password: this.options.password,
-                privateKey: this.options.privateKey
+                privateKey: this.options.privateKey,
+                debug: this.debug
             };
             if (this.options.agentForward) {
                 options['agentForward'] = true;
